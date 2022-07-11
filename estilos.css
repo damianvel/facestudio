@@ -1,0 +1,48 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.body {
+    background-image: linear-gradient(black, white);
+}
+
+
+.gridhome {
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "main"
+        "footer";
+
+    grid-template-rows: auto;
+    row-gap: 2%;
+    background-image: linear-gradient(black, white);
+}
+
+.head {
+    grid-area: nav;
+}
+
+
+.foto {
+    margin-top: 2%;
+}
+
+
+footer {
+    grid-area: footer;
+    font-size: 1.5rem;
+    padding: 2rem;
+    margin-right: 10%;
+    text-align: right;
+}
