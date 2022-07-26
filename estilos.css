@@ -12,10 +12,7 @@ html {
     padding: 0px;
 }
 
-.body {
-    background-image: linear-gradient(black, white);
-}
-
+main{background-image: linear-gradient(to right, white, rgb(206, 169, 169), rgb(146, 220, 145))}
 
 .gridhome {
     display: grid;
@@ -24,7 +21,7 @@ html {
         "main"
         "footer";
 
-    grid-template-rows: auto;
+    grid-template-rows: 3% auto 3%;
     row-gap: 2%;
     background-image: linear-gradient(black, white);
 }
@@ -45,4 +42,13 @@ footer {
     padding: 2rem;
     margin-right: 10%;
     text-align: right;
+}
+
+
+.container-fluid{align-content: center ;padding: 10%;
+font-size: 1.5rem;}
+
+.enviar{margin-left: 80%;}
+
+.mb-2{width: 100%; padding-left: 10%; padding-right: 10%;
 }
