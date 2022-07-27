@@ -12,7 +12,6 @@ html {
     padding: 0px;
 }
 
-main{background-image: linear-gradient(to right, white, rgb(206, 169, 169), rgb(146, 220, 145))}
 
 .gridhome {
     display: grid;
@@ -21,34 +20,107 @@ main{background-image: linear-gradient(to right, white, rgb(206, 169, 169), rgb(
         "main"
         "footer";
 
-    grid-template-rows: 3% auto 3%;
+    grid-template-rows: 0.1rem auto auto;
     row-gap: 2%;
-    background-image: linear-gradient(black, white);
 }
 
-.head {
+header {
     grid-area: nav;
 }
 
-
-.foto {
-    margin-top: 2%;
+main {
+    grid-area: main;
 }
 
 
 footer {
     grid-area: footer;
-    font-size: 1.5rem;
-    padding: 2rem;
-    margin-right: 10%;
-    text-align: right;
+
 }
 
 
-.container-fluid{align-content: center ;padding: 10%;
-font-size: 1.5rem;}
+.navbar {
+    height: auto;
+}
 
-.enviar{margin-left: 80%;}
 
-.mb-2{width: 100%; padding-left: 10%; padding-right: 10%;
+.navbar-brand {
+    font-size: 4rem;
+}
+
+.nav-item {
+    margin-left: 50%;
+}
+
+
+.landingph {
+    margin-bottom: 3%;
+}
+
+
+.foto {
+    margin-bottom: 2%;
+}
+
+
+.container-fluid {
+    align-content: center;
+    padding: 10%;
+    font-size: 1.5rem;
+}
+
+
+.footerflex {
+    display: flex;
+    flex-direction: column;
+    height: 1.5rem;
+    font-size: 1.5rem;
+    padding: 2rem;
+    margin-right: 15%;
+    text-align: right;
+    margin-bottom: 6rem;
+}
+
+
+.enviar {
+    margin-left: 80%;
+}
+
+
+.navbar-nav {
+    margin-left: 70%;
+}
+
+
+@media (min-width: 576px) {
+    .navbar-nav {
+        margin-left: 30%;
+    }
+
+    .nav-item {
+        margin-left: 30%;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        margin-left: 50%;
+    }
+
+    .nav-item {font-size: 2rem;;
+        margin-left: 25%;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        margin-left: 70%;
+    }
+
+    .nav-item {
+        margin-left: 30%;
+    }
+
 }
